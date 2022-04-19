@@ -1,5 +1,5 @@
 [package]
-name = "reshape-helper"
+name = "reshape_helper"
 version = "0.1.0"
 edition = "2021"
 
