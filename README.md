@@ -48,3 +48,7 @@ fn main() {
 	// Execute reshape_schema_query against your database...
 }
 ```
+
+## License
+
+Released under the [MIT license](https://choosealicense.com/licenses/mit/).
