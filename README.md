@@ -1,5 +1,7 @@
 # Reshape Rust helper
 
+[![Test status badge](https://github.com/fabianlindfors/reshape-helper/actions/workflows/test.yaml/badge.svg)](https://github.com/fabianlindfors/reshape-helper/actions/workflows/test.yaml)
+
 This is a Rust helper library for the automated, zero-downtime schema migration tool [Reshape](https://github.com/fabianlindfors/reshape). To achieve zero-downtime migrations, Reshape requires that your application runs a simple query when it opens a connection to the database to select the right schema. This library automates that process and provides a macro to embed the right query directly in your application.
 
 ## Installation
