@@ -2,6 +2,13 @@
 name = "reshape_helper"
 version = "0.1.0"
 edition = "2021"
+description = "Helper library for Reshape"
+homepage = "https://github.com/fabianlindfors/reshape-helper"
+documentation = "https://github.com/fabianlindfors/reshape-helper"
+repository = "https://github.com/fabianlindfors/reshape-helper"
+license = "MIT"
+keywords = ["postgres", "migrations"]
+authors = ["Fabian Lindfors"]
 
 [lib]
 proc-macro = true
