@@ -15,7 +15,7 @@ reshape_helper = "0.1.0"
 
 ## Usage
 
-The library exposes a single macro which will find all your Reshape migration files and determine the right schema query to run. The macro will be evaluated at compile time and embed directly in your binary, so you won't need to keep your migration files around at runtime.
+The library exposes a single macro which will find all your Reshape migration files and determine the right schema query to run. The macro will be evaluated at compile time and the query embedded directly in your binary, so you won't need to keep your migration files around at runtime.
 
 The following is an example of how to use the library together with [SQLx](https://github.com/launchbadge/sqlx) (but it works with any Postgres client):
 
@@ -36,7 +36,7 @@ async fn main() {
 }
 ```
 
-By default, `schema_query!` will look for migrations files in `migrations/` but you can specify your own directories as well:
+By default, `schema_query!` will look for migration files in `migrations/` but you can specify your own directories as well:
 
 ```rust
 use reshape_helper::schema_query
