@@ -9,14 +9,14 @@ fn default_folder() {
 #[test]
 fn custom_directory() {
     let query: &'static str = schema_query!("tests/fixtures/migrations-1");
-    assert_eq!(query, "SET search_path TO migration_3_test_migration");
+    assert_eq!(query, "SET search_path TO migration_10_test_migration");
 }
 
 #[test]
 fn multiple_directories() {
     let query: &'static str =
         schema_query!("tests/fixtures/migrations-1", "tests/fixtures/migrations-2");
-    assert_eq!(query, "SET search_path TO migration_3_test_migration");
+    assert_eq!(query, "SET search_path TO migration_10_test_migration");
 }
 
 #[test]

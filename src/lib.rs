@@ -52,7 +52,13 @@ fn find_migrations(dirs: Vec<String>) -> Vec<String> {
     }
 
     // Sort all files by their file names (without extension)
-    file_paths.sort_unstable_by_key(|path| path.as_path().file_stem().unwrap().to_os_string());
+    // The files are sorted naturally, e.g. "1_test_migration" < "10_test_migration"
+    file_paths.sort_unstable_by(|path1, path2| {
+        let file1 = path1.as_path().file_stem().unwrap().to_str().unwrap();
+        let file2 = path2.as_path().file_stem().unwrap().to_str().unwrap();
+
+        lexical_sort::natural_cmp(file1, file2)
+    });
 
     file_paths
         .iter()
