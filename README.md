@@ -10,7 +10,7 @@ Add `reshape_helper` as a dependency to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-reshape_helper = "0.1.0"
+reshape_helper = "0.1.1"
 ```
 
 ## Usage
